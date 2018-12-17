@@ -44,5 +44,5 @@ sshpass -p raspberry ssh-copy-id pi@raspberrypi.local
 # Copy config and setup script to your new node and install docker/kubernetes
 #
 echo "Copying files to our new friend and deploy kubernetes, sit back and relax"
-scp config.ini run.sh pi@raspberrypi.local:/home/pi
-ssh pi@raspberrypi.local sh -c './run.sh'
+scp config.ini setup.sh pi@raspberrypi.local:/home/pi
+ssh pi@raspberrypi.local sh -c './setup.sh'
