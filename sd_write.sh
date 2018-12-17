@@ -30,7 +30,7 @@ sudo touch "$BOOT_PATH/ssh"
 # sync and umount
 #
 sync
-umount $ROOT_PATH
+umount $BOOT_PATH
 #
 # Wait for your new friend to be available and setup key auth.
 #
