@@ -5,7 +5,7 @@ Install Kubernetes/Docker on raspberry pi 3 B+
 
 # Usage
 
-Simply execute `raspbian_install.sh` and the following actions will be take care of:
+Simply execute `sd_write.sh` and the following actions will be take care of:
 - Download of the latest Raspbian lite image
 - Write image to microsd card
 - Enable ssh connection
