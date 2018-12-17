@@ -1,0 +1,9 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+- docker pull resin/rpi-raspbian:stretch
+
+script:
+  - docker run resin/rpi-raspbian:stretch /bin/bash -c "ls -ltra"
