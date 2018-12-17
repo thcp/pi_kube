@@ -11,4 +11,4 @@ addons:
     - dosfstools
     - zip
 script:
-- sudo bash ./setup.sh
+- bash ./build_test.sh
