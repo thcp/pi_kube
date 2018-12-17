@@ -1,6 +1,14 @@
+dist: trusty
 sudo: required
-services:
-  - docker
-
+addons:
+  apt:
+    packages:
+    - qemu
+    - qemu-user-static
+    - binfmt-support
+    - parted
+    - wget
+    - dosfstools
+    - zip
 script:
-  - docker run resin/rpi-raspbian:stretch /bin/bash -c "ls -ltra"
+- sudo bash ./setup.sh
