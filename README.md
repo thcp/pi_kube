@@ -1,2 +1,19 @@
-# pi_kube
-Kubernetes setup for raspberry pi 3 B+
+# pi-kube
+
+Install Kubernetes/Docker on raspberry pi 3 B+
+
+
+# Usage
+
+Simply execute `raspbian_install.sh` and the following actions will be take care of:
+- Download of the latest Raspbian lite image
+- Write image to microsd card
+- Enable ssh connection
+- Wait for connection for copying public key
+- ssh-copy  of `setup.sh` and `config.ini` for the new guy and automatic steps will be taken care of:
+- Network setup 
+- Update Kernel kernel arguments necessary for kubernetes on `/boot/cmdline.txt` file
+- Swap disable
+- Install Docker/Kubernetes
+- Setup Weave Network
+
