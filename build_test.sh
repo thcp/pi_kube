@@ -3,13 +3,6 @@
 set -e 
 source config.ini
 
-#
-# Disable swap
-#
-sudo dphys-swapfile swapoff
-sudo dphys-swapfile uninstall
-sudo update-rc.d dphys-swapfile remove
-#
 # Install Docker
 #
 curl -sSL get.docker.com | sh && sudo usermod pi -aG docker
