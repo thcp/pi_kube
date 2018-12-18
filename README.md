@@ -17,3 +17,10 @@ Simply execute `sd_write.sh` and the following actions will be take care of:
 - Install Docker/Kubernetes
 - Setup Weave Network
 
+# Todo
+
+- [ ] Deploy nodes via Chef
+- [ ] Improve image writer logic
+- [ ] Include Kubernetes Dashboard deployment
+- [ ] Include helm/tiller installation ?
+- [ ] Auto add new nodes to Cluster
