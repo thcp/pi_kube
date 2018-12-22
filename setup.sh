@@ -29,9 +29,10 @@ sudo dphys-swapfile swapoff
 sudo dphys-swapfile uninstall
 sudo update-rc.d dphys-swapfile remove
 #
-# Install Docker
+# Install Docker / Docker Compose
 #
 curl -sSL get.docker.com | sh && sudo usermod pi -aG docker
+sudo apt-get install -qqy docker-compose
 #
 # Install Kubernetes
 #
