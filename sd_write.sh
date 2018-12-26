@@ -42,6 +42,9 @@ df
 echo -n "Confirm and type boot mount point (eg: /run/media/user/boot): "
 read BOOT_PATH
 sudo touch "$BOOT_PATH/ssh"
+sudo cp "$BOOT_PATH/cmdline.txt" "$BOOT_PATH/cmdline_backup.txt"
+orig="$(head -n1 $BOOT_PATH/cmdline.txt) cgroup_enable=cpuset cgroup_enable=memory"
+echo $orig | sudo tee "$BOOT_PATH/cmdline.txt"
 
 #
 # Sync and Unmount
