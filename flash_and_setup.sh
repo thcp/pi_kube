@@ -44,6 +44,8 @@ echo """
 """
 ./*"${VERSION}"*
 
+echo "Create ssh file on /boot partition for enabling ssh server"
+read -p "Press any key to continue..."
 echo "Copy cmdline.txt to /boot partition, please make a backup of the old one as cmdline.txt.bkp"
 read -p "Press any key to continue..."
 echo "Copy dhcpdcd.conf to /etc to your microsd root path"
