@@ -10,13 +10,12 @@ sudo hostnamectl --transient set-hostname $HOSTNAME
 sudo hostnamectl --static set-hostname $HOSTNAME
 sudo hostnamectl --pretty set-hostname $HOSTNAME
 sudo sed -i s/raspberrypi/$HOSTNAME/g /etc/hosts    
-sudo cat <<EOT > /etc/dhcpcd.conf
-interface eth0
-static ip_address=$IPADDR/24
-static routers=$ROUTER
-static domain_name_servers=$DNS
-EOT
 
+#
+# Update 
+#
+sudo apt-get update -y
+sudo apt-get upgrade -y
 #
 # Disable swap
 #
