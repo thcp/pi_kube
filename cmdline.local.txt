@@ -1,0 +1,1 @@
+ quiet init=/usr/lib/raspi-config/init_resize.sh cgroup_enable=cpuset cgroup_enable=memory
